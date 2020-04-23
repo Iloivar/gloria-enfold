@@ -1,5 +1,3 @@
-wp-admin
-wp-includes
 index.php
 license.txt
 liesmich.html
@@ -18,3 +16,12 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+.htaccess
+
+wp-admin
+wp-includes
+wp-content/languages
+wp-content/themes/enfold
+wp-content/themes/upgrade
+wp-content/themes/uploads
+wp-content/index.php
