@@ -3,6 +3,166 @@
 /* General Custom CSS */
 
 
+/*
+  Hier kommen die Gloria Buttons
+*/
+#top .avia-slideshow-button {
+    background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
+    linear-gradient(225deg, transparent 5px, #44834e 0) top right,
+    linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
+    linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
+    background-size: 51% 50%;
+    border-bottom-style: hidden;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+
+#top .main_color .avia-color-theme-color {
+    background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
+    linear-gradient(225deg, transparent 5px, #44834e 0) top right,
+    linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
+    linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
+    background-size: 51% 51%;
+    border-bottom-style: hidden;
+    background-repeat: no-repeat;
+    padding: 19px 50px 19px;
+}
+
+/*
+Schattierung von SliderText oben
+ */
+.gloria-avia-caption-content-gray {
+    margin: 0 35px 0 35px !important;
+    display: grid !important;
+    background: rgba(0,0,0, 0.5) !important;
+}
+
+.gloria-avia-caption-title-gray {
+    margin: 0 35px 0 35px !important;
+    display: grid !important;
+    background: rgba(0,0,0, 0.5) !important;
+}
+
+.gloria-avia-caption-content-white {
+    margin: 0 35px 0 35px !important;
+    display: grid !important;
+    background: rgba(242,242,242, 0.5) !important;
+}
+
+.gloria-avia-caption-title-white {
+    margin: 0 35px 0 35px !important;
+    display: grid !important;
+    background: rgba(242,242,242, 0.5) !important;
+}
+
+.gloria-avia-caption-content-green {
+    margin: 0 35px 0 35px !important;
+    display: grid !important;
+    background: rgba(68,131,78, 0.5) !important;
+}
+
+.gloria-avia-caption-title-green {
+    margin: 0 35px 0 35px !important;
+    display: grid !important;
+    background: rgba(68,131,78, 0.5) !important;
+}
+
+/*
+wir brauchen dads background: none hier, da wir sonst einen schwarzen schatten im content haben.
+ */
+.caption_framed .slideshow_caption .avia-caption-content p, .caption_framed .slideshow_caption .avia-caption-title,
+.avia-caption .avia-caption-content p, .avia-caption .avia-caption-title{
+    filter: alpha(opacity = 80);
+    display:inline-block;
+    margin:0 0 1px 0;
+    padding:10px 15px;
+    background: none;
+}
+
+
+/*
+Dots auf dem Slider oben
+ */
+.av-slider-scroll-down-active .avia-slideshow-dots a {
+    opacity: 1;
+    background: transparent;
+    border: white solid 1px;
+    margin: 0 5px 0 5px;
+}
+
+.avia-slideshow-dots a.active, .avia-slideshow-dots {
+    opacity: 1;
+    background: white;
+    margin: 0 5px 0 5px;
+}
+
+
+#top #wrap_all .all_colors h3 {
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.gloria-social-buttons {
+    background: linear-gradient(135deg, transparent 3px, #f2f2f2 0) top left,
+    linear-gradient(225deg, transparent 3px, #f2f2f2 0) top right,
+    linear-gradient(315deg, transparent 3px, #f2f2f2 0) bottom right,
+    linear-gradient(45deg, transparent 3px, #f2f2f2 0) bottom left;
+    background-size: 51% 51%;
+    border-bottom-style: hidden;
+    background-repeat: no-repeat;
+    padding: 8px 13px 8px 13px;
+    color: #292929 !important;
+    margin: 10px 20px 10px 20px;
+}
+
+
+/*
+  Hier kommen die UNSERE PRODUKTE UND DIENSTLEISTUNGEN Mini LKW.
+*/
+
+#top .avia-smallarrow-slider .avia-slideshow-arrows {
+    width: 100%;
+    top: 90px;
+}
+
+#top .avia-content-slider .avia-slideshow-arrows a {
+    top: 38%;
+    background: green;
+    margin: -30px -40px 0;
+}
+
+
+.responsive .logo img {
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.social_header #header_main .container, .social_header .main_menu ul:first-child > li a {
+    height: 116px;
+    line-height: 116px;
+}
+
+#custom_html-2 {
+    text-align: center;
+}
+
+#top .fullsize .template-blog .post .entry-content-wrapper {
+    display: none;
+}
+
+#top .fullsize .template-blog .big-preview {
+    margin-left: -55px;
+    margin-right: -55px;
+}
+
+.responsive .logo img {
+    height: 55px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /*
@@ -11,10 +171,9 @@ Desktop Styles
 /* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
 
 @media only screen and (min-width: 768px) {
-  /* Add your Desktop Styles here */
+    /* Add your Desktop Styles here */
 
 }
-
 
 
 /*
@@ -23,6 +182,15 @@ Mobile Styles
 /* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
 
 @media only screen and (max-width: 767px) {
-  /* Add your Mobile Styles here */
+    /* Add your Mobile Styles here */
+    #top .logo,
+    #top .logo a {
+        height: 55px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    #top .fullsize .template-blog .big-preview {
+        margin-top: 25px;
+    }
 }

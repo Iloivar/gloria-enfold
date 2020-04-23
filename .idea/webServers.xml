@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0bcae3c8-c293-4e2a-b87a-67b0cf04c355" name="meiner/gloria-enfold" url="http://s201.goserver.host">
+        <fileTransfer host="s201.goserver.host" port="21" rootFolder="/home/www/gloria-enfold">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
