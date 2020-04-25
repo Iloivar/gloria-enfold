@@ -35,48 +35,48 @@ Schattierung von SliderText oben
 .gloria-avia-caption-content-gray {
     margin: 0 35px 0 35px !important;
     display: grid !important;
-    background: rgba(0,0,0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .gloria-avia-caption-title-gray {
     margin: 0 35px 0 35px !important;
     display: grid !important;
-    background: rgba(0,0,0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .gloria-avia-caption-content-white {
     margin: 0 35px 0 35px !important;
     display: grid !important;
-    background: rgba(242,242,242, 0.5) !important;
+    background: rgba(242, 242, 242, 0.5) !important;
 }
 
 .gloria-avia-caption-title-white {
     margin: 0 35px 0 35px !important;
     display: grid !important;
-    background: rgba(242,242,242, 0.5) !important;
+    background: rgba(242, 242, 242, 0.5) !important;
 }
 
 .gloria-avia-caption-content-green {
     margin: 0 35px 0 35px !important;
     display: grid !important;
-    background: rgba(68,131,78, 0.5) !important;
+    background: rgba(68, 131, 78, 0.5) !important;
 }
 
 .gloria-avia-caption-title-green {
     margin: 0 35px 0 35px !important;
     display: grid !important;
-    background: rgba(68,131,78, 0.5) !important;
+    background: rgba(68, 131, 78, 0.5) !important;
 }
 
 /*
 wir brauchen dads background: none hier, da wir sonst einen schwarzen schatten im content haben.
  */
 .caption_framed .slideshow_caption .avia-caption-content p, .caption_framed .slideshow_caption .avia-caption-title,
-.avia-caption .avia-caption-content p, .avia-caption .avia-caption-title{
-    filter: alpha(opacity = 80);
-    display:inline-block;
-    margin:0 0 1px 0;
-    padding:10px 15px;
+.avia-caption .avia-caption-content p, .avia-caption .avia-caption-title {
+    filter: alpha(opacity=80);
+    display: inline-block;
+    margin: 0 0 1px 0;
+    padding: 10px 15px;
     background: none;
 }
 
@@ -129,7 +129,7 @@ Dots auf dem Slider oben
 #top .avia-content-slider .avia-slideshow-arrows a {
     top: 38%;
     background: green;
-    margin: -30px -40px 0;
+    margin: -30px -25px 0;
 }
 
 
@@ -164,6 +164,26 @@ Dots auf dem Slider oben
     margin-right: auto;
 }
 
+/*
+Styling des Burger Menus
+ */
+#top #av-burger-menu-ul {
+    background: #292929;
+}
+
+.html_av-overlay-side #top #wrap_all .av-burger-overlay-scroll #av-burger-menu-ul a {
+    color: #f2f2f2 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.html_av-overlay-side-classic #top .av-burger-overlay li li .avia-bullet, .html_av-overlay-side.av-burger-overlay-active #top .av-hamburger-inner, .html_av-overlay-side.av-burger-overlay-active #top .av-hamburger-inner::before, .html_av-overlay-side.av-burger-overlay-active #top .av-hamburger-inner::after {
+    background-color: #44834e !important;
+}
+
 
 /*
 Desktop Styles
@@ -192,5 +212,30 @@ Mobile Styles
 
     #top .fullsize .template-blog .big-preview {
         margin-top: 25px;
+    }
+
+    #top #menu-item-search {
+        display: none;
+    }
+
+    .av-burger-overlay-active #top #menu-item-search {
+        display: block;
+    }
+
+    .html_av-overlay-side.av-burger-overlay-active #top #wrap_all #header .menu-item-search-dropdown a {
+        color: #44834e !important;
+    }
+
+    .html_av-overlay-side #top #wrap_all div .av-burger-overlay-scroll #av-burger-menu-ul a:hover {
+        background-color: transparent !important;
+        color: #44834e !important;
+    }
+
+    .html_av-submenu-hidden .av-submenu-indicator {
+        background: linear-gradient(135deg, transparent 2px, #f2f2f2 0) top left, linear-gradient(225deg, transparent 2px, #f2f2f2 0) top right, linear-gradient(315deg, transparent 2px, #f2f2f2 0) bottom right, linear-gradient(45deg, transparent 2px, #f2f2f2 0) bottom left;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+        color: #292929 !important;
+        padding: 0px 8px !important;
     }
 }
