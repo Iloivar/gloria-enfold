@@ -2,6 +2,141 @@
 
 /* General Custom CSS */
 
+@font-face {
+    font-family: "EurostileLTStd";
+    src: url("../fonts/EurostileLTStd.otf"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "EurostileLTStd-Demi";
+    src: url("../fonts/EurostileLTStd-Demi.otf"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "EurostileLTStd-Bold";
+    src: url("../fonts/EurostileLTStd-Bold.otf"); /* Modern Browsers */
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DINPro";
+    src: url("../fonts/DINPro.otf"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DINPro-Light";
+    src: url("../fonts/DINPro-Light.otf"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DINPro-Demi";
+    src: url("../fonts/DINPro-Medium.otf"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DINPro-Bold";
+    src: url("../fonts/DINPro-Bold.otf"); /* Modern Browsers */
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/*
+FIRST FONTS ONLY
+ */
+h1, h2, h3 {
+    font-family: 'EurostileLTStd-Bold', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+
+p, li {
+    font-family: 'DINPro-Light' , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.gloria_dinpro_light {
+    font-family: 'DINPro-Light' , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.gloria-avia-caption-content-gray p {
+    font-family: 'DINPro' , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+}
+
+#top .main_color .avia-color-theme-color {
+    font-family: 'DINPro' , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+
+}
+
+.page-id-504 h3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.custom-caption {
+    font-family: 'DINPro-Light' , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+#av-burger-menu-ul li a {
+    font-family: 'EurostileLTStd-Bold', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 1.5vh;
+}
+
+.sub-menu li a {
+    font-family: 'DINPro', 'Helvetica-Neue', Helvetica, Arial, sans-serif !important;
+
+}
+
+.grid-entry-title a {
+    font-family: 'DINPro-Demi', 'Helvetica-Neue', Helvetica, Arial, sans-serif !important;
+
+}
+
+/*
+Back Button Portfolio Itempage
+ */
+#my-back-button {
+    position: relative;
+    float: left;
+    background: none!important;
+    border: none;
+    padding: 0px 6px 6px 6px !important;    /*optional*/
+    font-family: 'DINPro-Bold', 'Helvetica-Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 14px;
+    /*input has OS specific font-family*/
+    color: #44834e;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*
+FIRST FONTS ONLY ENDE
+ */
+
+.special_amp {
+    font-family: inherit;
+    font-size: inherit !important;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit !important;
+}
 
 /*
   Hier kommen die Gloria Buttons
@@ -89,6 +224,7 @@ Dots auf dem Slider oben
     background: transparent;
     border: white solid 1px;
     margin: 0 5px 0 5px;
+    padding: 4px;
 }
 
 .avia-slideshow-dots a.active, .avia-slideshow-dots {
@@ -97,11 +233,23 @@ Dots auf dem Slider oben
     margin: 0 5px 0 5px;
 }
 
+ul {
+    list-style-type: square !important;
+}
 
-#top #wrap_all .all_colors h3 {
+#gloria-portfolio-category {
+    min-height: 40px;
+    height: 40px;
+}
+
+#gloria-portfolio-category .container div.template-page{
+    padding: 8px !important;
+}
+
+/*#top #wrap_all .all_colors h3 {
     letter-spacing: 2px;
     text-decoration: underline;
-}
+}*/
 
 .gloria-social-buttons {
     background: linear-gradient(135deg, transparent 3px, #f2f2f2 0) top left,
@@ -111,9 +259,32 @@ Dots auf dem Slider oben
     background-size: 51% 51%;
     border-bottom-style: hidden;
     background-repeat: no-repeat;
-    padding: 8px 13px 8px 13px;
+    padding: 8px 12px 8px 12px;
     color: #292929 !important;
     margin: 10px 20px 10px 20px;
+}
+
+.page-id-504 #av_section_2 .container {
+    width:100% !important;
+    max-width: 100% !important;
+}
+
+.page-id-504 #av_section_2 .container .template-page {
+    padding: 0 !important;
+}
+
+.page-id-504 #av-sc-portfolio-1 .grid-entry{
+    width: 125% !important;
+    padding-left: 0 !important;
+    left: -40px !important;
+}
+
+.page-id-504 .responsive #top #wrap_all .grid-sort-container .grid-entry {
+    width: 100% !important;
+}
+
+#top .isotope-item.special_av_fullwidth .av_table_col.grid-content {
+    display: none;
 }
 
 
@@ -126,10 +297,19 @@ Dots auf dem Slider oben
     top: 90px;
 }
 
-#top .avia-content-slider .avia-slideshow-arrows a {
-    top: 38%;
+#top .avia-content-slider .avia-slideshow-arrows a.prev-slide {
+    top: 0;
     background: green;
-    margin: -30px -25px 0;
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+#top .avia-content-slider .avia-slideshow-arrows a.next-slide {
+    top: 0;
+    background: green;
+    position: absolute;
+    right: -20px;
 }
 
 
@@ -174,16 +354,81 @@ Styling des Burger Menus
 .html_av-overlay-side #top #wrap_all .av-burger-overlay-scroll #av-burger-menu-ul a {
     color: #f2f2f2 !important;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 15px 15px;
+}
+
+.html_av-overlay-side #top #wrap_all .av-burger-overlay-scroll #av-burger-menu-ul ul li a {
+    color: #f2f2f2 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    padding-left: 15px;
 }
 
 .html_av-overlay-side-classic #top .av-burger-overlay li li .avia-bullet, .html_av-overlay-side.av-burger-overlay-active #top .av-hamburger-inner, .html_av-overlay-side.av-burger-overlay-active #top .av-hamburger-inner::before, .html_av-overlay-side.av-burger-overlay-active #top .av-hamburger-inner::after {
     background-color: #44834e !important;
 }
 
+/*
+Portfolio
+ */
+
+/* Give it an ID and important to overwrite the menu Arrow color. */
+#gloria-portfolio-arrow {
+    color: white !important;
+    background: linear-gradient(135deg, transparent 2px, #44834e 0) top left, linear-gradient(225deg, transparent 2px, #44834e 0) top right, linear-gradient(315deg, transparent 2px, #44834e 0) bottom right, linear-gradient(45deg, transparent 2px, #44834e 0) bottom left;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-right: -23px;
+}
+
+#top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before {
+    font-size: 14px;
+}
+
+.custom-caption {
+    width: 100%;
+    color: #000;
+    font-size: 1.3vh;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+}
+
+
+#top .avia-logo-element-container .slide-entry:hover {
+    border-bottom: solid #44834e 1px;
+}
+
+
+
+
+#gloria_back {
+    position: relative;
+    float: left;
+    background: linear-gradient(135deg, transparent 2px, #44834e 0) top left, linear-gradient(225deg, transparent 2px, #44834e 0) top right, linear-gradient(315deg, transparent 2px, #44834e 0) bottom right, linear-gradient(45deg, transparent 2px, #44834e 0) bottom left;
+    color: white !important;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+    top: 13px;
+    left: -7px;
+}
+
+.gloria_back_container {
+    float: right;
+}
+
+ .html_av-submenu-hidden #gloria_back.av-submenu-indicator:before {
+    content: "\E87c";
+}
 
 /*
 Desktop Styles
@@ -237,5 +482,87 @@ Mobile Styles
         background-repeat: no-repeat;
         color: #292929 !important;
         padding: 0px 8px !important;
+        opacity: 0.8 !important;
+        margin-top: -13px;
     }
+
+    .html_av-submenu-hidden .av-submenu-indicator:hover {
+        background: linear-gradient(135deg, transparent 2px, #44834e 0) top left, linear-gradient(225deg, transparent 2px, #44834e 0) top right, linear-gradient(315deg, transparent 2px, #44834e 0) bottom right, linear-gradient(45deg, transparent 2px, #44834e 0) bottom left;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+        color: #292929 !important;
+        padding: 0px 8px !important;
+        opacity: 0.8 !important;
+        margin-top: -13px;
+    }
+
+    .html_av-overlay-full #top #wrap_all #av-burger-menu-ul li a {
+        text-align: left;
+    }
+
+    .responsive #top #wrap_all .slide-entry {
+        width: 40%;
+        margin-left: 7% !important;
+    }
+
+    /*
+    Portfolioeinträge Vorschau
+     */
+    .responsive #top #wrap_all .grid-sort-container .grid-entry {
+        width: 48%;
+        float: left;
+        padding-left: 7px;
+    }
+
+    .grid-content {
+        height: 75px;
+        display: flex;
+        text-align: left;
+        align-items: baseline;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 5px 5px;
+
+        /* These are technically the same, but use both */
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        -ms-word-break: break-all;
+        /* This is the dangerous one in WebKit, as it breaks things wherever */
+        word-break: break-all;
+        /* Instead use this non-standard one: */
+        word-break: break-word;
+
+        /* Adds a hyphen where the word breaks, if supported (No Blink) */
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+
+    .grid-entry-title a {
+        color: #44834e !important;
+    }
+
+    #top .avia-slideshow-arrows a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .avia-slideshow-arrows a:before {
+        line-height: 35px;
+    }
+
+    .avia-button {
+        font-size: 12px!important;
+    }
+
+    #gloria_color_cur_projects {
+        min-height: 31px;
+        height: 31px;
+    }
+
+
+
 }

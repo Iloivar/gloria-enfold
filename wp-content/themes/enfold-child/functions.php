@@ -22,3 +22,49 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
+
+function show_portfolio_category_func() {
+    global $post;
+    $the_terms = get_the_terms( $post->ID , 'portfolio_entries');
+    ob_start();
+
+    echo $the_terms[0]->name;
+
+    $output = ob_get_clean();
+    return $output;
+}
+add_shortcode('portfolio_category', 'show_portfolio_category_func');
+
+add_action('wp_footer', 'ava_new_custom_script_mobile');
+function ava_new_custom_script_mobile(){
+    ?>
+    <script type="text/javascript">
+        (function($) {
+            $(window).load(function() {
+                jQuery(".slide-entry.av_one_half").each(function() {
+                    var el = jQuery(this);
+                    el.append("<span class='custom-caption'>" + el.attr("data-avia-tooltip") + "</span>");
+                    el.attr("data-avia-tooltip", "");
+                });
+            });
+        })(jQuery);
+    </script>
+    <?php
+}
+
+add_action('wp_footer', 'ava_new_custom_script_desktop');
+function ava_new_custom_script_desktop(){
+    ?>
+    <script type="text/javascript">
+        (function($) {
+            $(window).load(function() {
+                jQuery(".slide-entry.av_one_fourth").each(function() {
+                    var el = jQuery(this);
+                    el.append("<span class='custom-caption'>" + el.attr("data-avia-tooltip") + "</span>");
+                    el.attr("data-avia-tooltip", "");
+                });
+            });
+        })(jQuery);
+    </script>
+    <?php
+}
