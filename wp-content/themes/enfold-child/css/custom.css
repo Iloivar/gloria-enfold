@@ -53,9 +53,16 @@ h1, h2, h3 {
     font-family: 'EurostileLTStd-Bold', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 }
 
-p, li {
+p {
     font-family: 'DINPro-Light' , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+}
+
+li {
+    font-family: 'DINPro-Light', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 .gloria_dinpro_light {
@@ -71,6 +78,18 @@ p, li {
     font-style: normal;
     line-height: 1.3;
     letter-spacing: normal;
+    font-size: 20px;
+}
+
+.gloria-avia-caption-content-green p {
+    font-family: 'DINPro' , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    font-size: 20px;
 }
 
 #top .main_color .avia-color-theme-color {
@@ -109,6 +128,20 @@ p, li {
 
 }
 
+.breadcrumb .sep {
+    display: block;
+    overflow: hidden;
+    width: 12px;
+    font-size: 8px;
+}
+
+.trail-begin {
+    color: #44834e !important;
+}
+
+.trail-before {
+    display: none !important;
+}
 /*
 Back Button Portfolio Itempage
  */
@@ -161,7 +194,7 @@ FIRST FONTS ONLY ENDE
     background-size: 51% 51%;
     border-bottom-style: hidden;
     background-repeat: no-repeat;
-    padding: 19px 50px 19px;
+    padding: 19px 10px 19px;
 }
 
 /*
@@ -251,7 +284,7 @@ ul {
     text-decoration: underline;
 }*/
 
-.gloria-social-buttons {
+.gloria-social-button-fb {
     background: linear-gradient(135deg, transparent 3px, #f2f2f2 0) top left,
     linear-gradient(225deg, transparent 3px, #f2f2f2 0) top right,
     linear-gradient(315deg, transparent 3px, #f2f2f2 0) bottom right,
@@ -260,6 +293,19 @@ ul {
     border-bottom-style: hidden;
     background-repeat: no-repeat;
     padding: 8px 12px 8px 12px;
+    color: #292929 !important;
+    margin: 10px 20px 10px 20px;
+}
+
+.gloria-social-button-insta {
+    background: linear-gradient(135deg, transparent 3px, #f2f2f2 0) top left,
+    linear-gradient(225deg, transparent 3px, #f2f2f2 0) top right,
+    linear-gradient(315deg, transparent 3px, #f2f2f2 0) bottom right,
+    linear-gradient(45deg, transparent 3px, #f2f2f2 0) bottom left;
+    background-size: 51% 51%;
+    border-bottom-style: hidden;
+    background-repeat: no-repeat;
+    padding: 8px 10px 8px 10px;
     color: #292929 !important;
     margin: 10px 20px 10px 20px;
 }
@@ -289,6 +335,147 @@ ul {
 
 
 /*
+Style Newsbeitrag Homepage
+ */
+.page-id-504 .post-meta-infos {
+    display: none;
+}
+
+.page-id-504 .entry-footer {
+    display: none;
+}
+
+.page-id-504 .post_delimiter {
+    display: none;
+}
+
+.page-id-504 .more-link-arrow {
+    display: none;
+}
+
+#top.page-id-504 .fullsize .template-blog .post-title {
+    font-size: 2vh;
+    color: white;
+    padding: 0;
+    text-align: left;
+    font-family: EurostileLTStd-Demi , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+#top.page-id-504 .entry-content-header {
+    position: absolute;
+    bottom: 22px;
+    z-index: 99;
+}
+
+#top.page-id-504 .more-link {
+    color: white;
+    font-size: 13px;
+    font-family: DINPro-Demi , 'Helvetica-Neue', Helvetica, Arial, sans-serif;;
+}
+
+#top.page-id-504 .entry-content {
+    position: absolute;
+    top: 10px;
+    z-index: 99;
+    background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
+    linear-gradient(225deg, transparent 5px, #44834e 0) top right,
+    linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
+    linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
+    background-size: 51% 51%;
+    border-bottom-style: hidden;
+    background-repeat: no-repeat;
+    padding: 0px 20px 0px;
+}
+
+#top.page-id-504 .entry-content p {
+    display: none;
+}
+
+/*
+Style Newsbeitrag Blog Homepage Ende
+ */
+
+/*
+Style NEWS ÜBERSICHT SEITE
+ */
+
+.page-id-842 .post-meta-infos {
+    display: none;
+}
+
+.page-id-842 .entry-footer {
+    display: none;
+}
+
+.page-id-842 .post_delimiter {
+    display: none;
+}
+
+.page-id-842 .more-link-arrow {
+    display: none;
+}
+
+#top.page-id-842 .template-page .template-blog .entry-content-wrapper h1, .template-page .template-blog .entry-content-wrapper h2 {
+    font-size: 2vh;
+    color: white;
+    padding: 0;
+    text-align: left;
+    font-family: EurostileLTStd-Demi , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+#top.page-id-842 .entry-content-header {
+    position: absolute;
+    bottom: 22px;
+    z-index: 99;
+}
+
+#top.page-id-842 .more-link {
+    color: white;
+    font-size: 13px;
+    font-family: DINPro-Demi , 'Helvetica-Neue', Helvetica, Arial, sans-serif;;
+}
+
+#top.page-id-842 .entry-content {
+    position: absolute;
+    top: 10px;
+    z-index: 99;
+    background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
+    linear-gradient(225deg, transparent 5px, #44834e 0) top right,
+    linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
+    linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
+    background-size: 51% 51%;
+    border-bottom-style: hidden;
+    background-repeat: no-repeat;
+    padding: 0px 20px 0px;
+}
+
+#top.page-id-842 .entry-content p {
+    display: none;
+}
+
+#top.page-id-842 .entry-content-wrapper .big-preview.single-big {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#top.page-id-842 .wp-post-image {
+    border-radius: 0;
+}
+
+#top.page-id-842 article.post-entry {
+    margin-bottom: 50px;
+}
+
+/*
+Style NEWS ÜBERSICHT SEITE ENDE
+ */
+
+
+/*
   Hier kommen die UNSERE PRODUKTE UND DIENSTLEISTUNGEN Mini LKW.
 */
 
@@ -299,7 +486,7 @@ ul {
 
 #top .avia-content-slider .avia-slideshow-arrows a.prev-slide {
     top: 0;
-    background: green;
+    background: #44834e;
     position: absolute;
     left: 0;
     transform: translateX(-100%);
@@ -307,7 +494,7 @@ ul {
 
 #top .avia-content-slider .avia-slideshow-arrows a.next-slide {
     top: 0;
-    background: green;
+    background: #44834e;
     position: absolute;
     right: -20px;
 }
@@ -329,9 +516,7 @@ ul {
     text-align: center;
 }
 
-#top .fullsize .template-blog .post .entry-content-wrapper {
-    display: none;
-}
+
 
 #top .fullsize .template-blog .big-preview {
     margin-left: -55px;
@@ -430,6 +615,9 @@ Portfolio
     content: "\E87c";
 }
 
+#avia-menu {
+    list-style-type: none !important;
+}
 /*
 Desktop Styles
 ================================================== */
@@ -437,6 +625,14 @@ Desktop Styles
 
 @media only screen and (min-width: 768px) {
     /* Add your Desktop Styles here */
+
+    .logo a {
+        top: 15%;
+    }
+
+    .page-id-504 .slideshow_inner_caption {
+        padding: 0 30%;
+    }
 
 }
 
@@ -448,15 +644,38 @@ Mobile Styles
 
 @media only screen and (max-width: 767px) {
     /* Add your Mobile Styles here */
+
+    #sign-up h3 {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.33;
+        letter-spacing: 0.6px;
+    }
+
+    #sign-up h2 {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 1.25;
+        letter-spacing: 1px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+    }
+
+    #top #sign-up.main_color .avia-color-theme-color {
+        background: linear-gradient(135deg, transparent 5px, #f2f2f2 0) top left, linear-gradient(225deg, transparent 5px, #f2f2f2 0) top right, linear-gradient(315deg, transparent 5px, #f2f2f2 0) bottom right, linear-gradient(45deg, transparent 5px, #f2f2f2 0) bottom left;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+        padding: 19px 50px 19px;
+    }
+
+    #top #sign-up.main_color .avia-color-theme-color .avia_iconbox_title {
+        color: #44834e;
+    }
+
     #top .logo,
     #top .logo a {
         height: 55px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    #top .fullsize .template-blog .big-preview {
-        margin-top: 25px;
     }
 
     #top #menu-item-search {
@@ -509,7 +728,7 @@ Mobile Styles
     Portfolioeinträge Vorschau
      */
     .responsive #top #wrap_all .grid-sort-container .grid-entry {
-        width: 48%;
+        width: 48% !important;
         float: left;
         padding-left: 7px;
     }
@@ -563,6 +782,14 @@ Mobile Styles
         height: 31px;
     }
 
+    #top .parent-pageid-834 .avia-image-container .avia_image, .avia-image-container .avia-image-overlay-wrap {
+        width: 66px;
+        height: auto;
+    }
+
+    .responsive .single-portfolio .title_container .breadcrumb {
+        top: 15px;
+    }
 
 
 }
