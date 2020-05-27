@@ -58,7 +58,7 @@ function ava_new_custom_script_desktop(){
     <script type="text/javascript">
         (function($) {
             $(window).load(function() {
-                jQuery(".slide-entry.av_one_fourth").each(function() {
+                jQuery(".slide-entry.av_one_eighth").each(function() {
                     var el = jQuery(this);
                     el.append("<span class='custom-caption'>" + el.attr("data-avia-tooltip") + "</span>");
                     el.attr("data-avia-tooltip", "");

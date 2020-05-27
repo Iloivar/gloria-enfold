@@ -185,70 +185,6 @@ FIRST FONTS ONLY ENDE
     width: 50%;
 }
 
-
-#top .main_color .avia-color-theme-color {
-    background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
-    linear-gradient(225deg, transparent 5px, #44834e 0) top right,
-    linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
-    linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
-    background-size: 51% 51%;
-    border-bottom-style: hidden;
-    background-repeat: no-repeat;
-    padding: 19px 10px 19px;
-}
-
-/*
-Schattierung von SliderText oben
- */
-.gloria-avia-caption-content-gray {
-    margin: 0 35px 0 35px !important;
-    display: grid !important;
-    background: rgba(0, 0, 0, 0.5) !important;
-}
-
-.gloria-avia-caption-title-gray {
-    margin: 0 35px 0 35px !important;
-    display: grid !important;
-    background: rgba(0, 0, 0, 0.5) !important;
-}
-
-.gloria-avia-caption-content-white {
-    margin: 0 35px 0 35px !important;
-    display: grid !important;
-    background: rgba(242, 242, 242, 0.5) !important;
-}
-
-.gloria-avia-caption-title-white {
-    margin: 0 35px 0 35px !important;
-    display: grid !important;
-    background: rgba(242, 242, 242, 0.5) !important;
-}
-
-.gloria-avia-caption-content-green {
-    margin: 0 35px 0 35px !important;
-    display: grid !important;
-    background: rgba(68, 131, 78, 0.5) !important;
-}
-
-.gloria-avia-caption-title-green {
-    margin: 0 35px 0 35px !important;
-    display: grid !important;
-    background: rgba(68, 131, 78, 0.5) !important;
-}
-
-/*
-wir brauchen dads background: none hier, da wir sonst einen schwarzen schatten im content haben.
- */
-.caption_framed .slideshow_caption .avia-caption-content p, .caption_framed .slideshow_caption .avia-caption-title,
-.avia-caption .avia-caption-content p, .avia-caption .avia-caption-title {
-    filter: alpha(opacity=80);
-    display: inline-block;
-    margin: 0 0 1px 0;
-    padding: 10px 15px;
-    background: none;
-}
-
-
 /*
 Dots auf dem Slider oben
  */
@@ -353,40 +289,10 @@ Style Newsbeitrag Homepage
     display: none;
 }
 
-#top.page-id-504 .fullsize .template-blog .post-title {
-    font-size: 2vh;
-    color: white;
-    padding: 0;
-    text-align: left;
-    font-family: EurostileLTStd-Demi , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-}
-
-#top.page-id-504 .entry-content-header {
-    position: absolute;
-    bottom: 22px;
-    z-index: 99;
-}
-
 #top.page-id-504 .more-link {
     color: white;
     font-size: 13px;
     font-family: DINPro-Demi , 'Helvetica-Neue', Helvetica, Arial, sans-serif;;
-}
-
-#top.page-id-504 .entry-content {
-    position: absolute;
-    top: 10px;
-    z-index: 99;
-    background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
-    linear-gradient(225deg, transparent 5px, #44834e 0) top right,
-    linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
-    linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
-    background-size: 51% 51%;
-    border-bottom-style: hidden;
-    background-repeat: no-repeat;
-    padding: 0px 20px 0px;
 }
 
 #top.page-id-504 .entry-content p {
@@ -516,13 +422,6 @@ Style NEWS ÜBERSICHT SEITE ENDE
     text-align: center;
 }
 
-
-
-#top .fullsize .template-blog .big-preview {
-    margin-left: -55px;
-    margin-right: -55px;
-}
-
 .responsive .logo img {
     height: 55px !important;
     margin-left: auto;
@@ -578,16 +477,6 @@ Portfolio
     font-size: 14px;
 }
 
-.custom-caption {
-    width: 100%;
-    color: #000;
-    font-size: 1.3vh;
-    line-height: 14px;
-    text-transform: uppercase;
-    text-align: center;
-    display: inline-block;
-}
-
 
 #top .avia-logo-element-container .slide-entry:hover {
     border-bottom: solid #44834e 1px;
@@ -626,6 +515,54 @@ Desktop Styles
 @media only screen and (min-width: 768px) {
     /* Add your Desktop Styles here */
 
+    #top.page-id-504 .fullsize .template-blog .post-title {
+        font-size: 1.8vh;
+        color: #44834e;
+        padding: 0;
+        text-align: left;
+        margin-left: 50px;
+        font-family: EurostileLTStd-Demi , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+
+    #top.page-id-504 .entry-content {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        z-index: 99;
+        background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
+        linear-gradient(225deg, transparent 5px, #44834e 0) top right,
+        linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
+        linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
+        background-size: 51% 51%;
+        border-bottom-style: hidden;
+        background-repeat: no-repeat;
+        padding: 0px 20px 0px;
+    }
+
+    #top .fullsize .template-blog .big-preview a img {
+        border-radius: 0;
+    }
+
+
+    #top.page-id-504 .avia-logo-element-container .slide-entry {
+        padding: 8px;
+        margin-top: -8px;
+        margin-bottom: 40px;
+    }
+
+    #top .main_color .avia-color-theme-color {
+        background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
+        linear-gradient(225deg, transparent 5px, #44834e 0) top right,
+        linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
+        linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
+        background-size: 51% 51%;
+        border-bottom-style: hidden;
+        background-repeat: no-repeat;
+        padding: 13px 5px 13px;
+    }
+
     .logo a {
         top: 15%;
     }
@@ -634,7 +571,161 @@ Desktop Styles
         padding: 0 30%;
     }
 
+    #top #header_meta, #top #header_meta nav ul ul li, #top #header_meta nav ul ul a, #top #header_meta nav ul ul {
+        background-color: #44834e !important;
+    }
+
+    .custom-caption {
+        width: 100%;
+        color: #000;
+        font-size: 1vh;
+        line-height: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+    }
+
+    /*
+Schattierung von SliderText oben
+ */
+    .gloria-avia-caption-content-gray {
+        margin: 0 50px 0 50px !important;
+        display: grid !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .gloria-avia-caption-title-gray {
+        margin: 0 50px 0 50px !important;
+        display: grid !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .gloria-avia-caption-content-white {
+        margin: 0 50px 0 50px !important;
+        display: grid !important;
+        background: rgba(242, 242, 242, 0.5) !important;
+    }
+
+    .gloria-avia-caption-title-white {
+        margin: 0 50px 0 50px !important;
+        display: grid !important;
+        background: rgba(242, 242, 242, 0.5) !important;
+    }
+
+    .gloria-avia-caption-content-green {
+        margin: 0 50px 0 50px !important;
+        display: grid !important;
+        background: rgba(68, 131, 78, 0.5) !important;
+    }
+
+    .gloria-avia-caption-title-green {
+        margin: 0 50px 0 50px !important;
+        display: grid !important;
+        background: rgba(68, 131, 78, 0.5) !important;
+    }
+
+    /*
+    wir brauchen dads background: none hier, da wir sonst einen schwarzen schatten im content haben.
+     */
+    .caption_framed .slideshow_caption .avia-caption-content p, .caption_framed .slideshow_caption .avia-caption-title,
+    .avia-caption .avia-caption-content p, .avia-caption .avia-caption-title {
+        filter: alpha(opacity=80);
+        display: inline-block;
+        margin: 0 0 1px 0;
+        padding: 25px 75px 15px 75px;
+        background: none;
+    }
+
+    .av-main-nav ul li {
+        list-style-type: none !important;
+
+    }
+
+    #avia-menu li.menu-item_has_children .children {
+        width: 320px;
+    }
+
+    #avia-menu li.menu-item_has_children .children li {
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #292929;
+    }
+
+    #avia-menu li.menu-item_has_children .children li a {
+        background: #292929;
+        border: none;
+        margin: 7px 0px 2px 0px;
+        padding-top: 0;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    #avia-menu li.menu-item_has_children .children li:last-child a {
+        background: #292929;
+        border: none;
+        margin: 7px 0px 2px 0px;
+        padding-top: 0;
+        color: white;
+    }
+
+    #avia-menu li.menu-item_has_children .children li a:hover {
+        color: #44834e !important;
+    }
+
+    #avia-menu li.menu-item_has_children .children li a:after {
+        background: linear-gradient(135deg, transparent 2px, #f2f2f2 0) top left, linear-gradient(225deg, transparent 2px, #f2f2f2 0) top right, linear-gradient(315deg, transparent 2px, #f2f2f2 0) bottom right, linear-gradient(45deg, transparent 2px, #f2f2f2 0) bottom left;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+        color: #292929 !important;
+        padding: 0px 8px !important;
+        opacity: 0.8 !important;
+        margin-top: -13px;
+    }
+
+    #top.page-id-504 article.post-entry {
+        display: flex;
+    }
+
+    #top.page-id-504 article.post-entry .blog-meta {
+        width: 0px;
+    }
+
+    #top .fullsize .template-blog .big-preview {
+        flex: 1;
+        padding: 0;
+    }
+
+    #top .fullsize .template-blog .post .entry-content-wrapper {
+        flex: 1;
+        background-color: #f2f2f2;
+    }
+
+    #top.page-id-504 .entry-content-header {
+        position: absolute;
+        z-index: 99;
+        top: 35px;
+    }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -644,6 +735,125 @@ Mobile Styles
 
 @media only screen and (max-width: 767px) {
     /* Add your Mobile Styles here */
+
+    #top.page-id-504 .entry-content-header {
+        position: absolute;
+        bottom: 22px;
+        z-index: 99;
+    }
+
+    #top.page-id-504 .fullsize .template-blog .post-title {
+        font-size: 2vh;
+        color: white;
+        padding: 0;
+        text-align: left;
+        font-family: EurostileLTStd-Demi , 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+
+    #top.page-id-504 .entry-content {
+        position: absolute;
+        top: 10px;
+        z-index: 99;
+        background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
+        linear-gradient(225deg, transparent 5px, #44834e 0) top right,
+        linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
+        linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
+        background-size: 51% 51%;
+        border-bottom-style: hidden;
+        background-repeat: no-repeat;
+        padding: 0px 20px 0px;
+    }
+
+    #top .fullsize .template-blog .big-preview {
+        margin-left: -55px;
+        margin-right: -55px;
+    }
+
+    .custom-caption {
+        width: 100%;
+        color: #000;
+        font-size: 1.3vh;
+        line-height: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+    }
+
+    #top .main_color .avia-color-theme-color {
+        background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
+        linear-gradient(225deg, transparent 5px, #44834e 0) top right,
+        linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
+        linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
+        background-size: 51% 51%;
+        border-bottom-style: hidden;
+        background-repeat: no-repeat;
+        padding: 19px 10px 19px;
+    }
+
+    /*
+Schattierung von SliderText oben
+ */
+    .gloria-avia-caption-content-gray {
+        margin: 0 35px 0 35px !important;
+        display: grid !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .gloria-avia-caption-title-gray {
+        margin: 0 35px 0 35px !important;
+        display: grid !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .gloria-avia-caption-content-white {
+        margin: 0 35px 0 35px !important;
+        display: grid !important;
+        background: rgba(242, 242, 242, 0.5) !important;
+    }
+
+    .gloria-avia-caption-title-white {
+        margin: 0 35px 0 35px !important;
+        display: grid !important;
+        background: rgba(242, 242, 242, 0.5) !important;
+    }
+
+    .gloria-avia-caption-content-green {
+        margin: 0 35px 0 35px !important;
+        display: grid !important;
+        background: rgba(68, 131, 78, 0.5) !important;
+    }
+
+    .gloria-avia-caption-title-green {
+        margin: 0 35px 0 35px !important;
+        display: grid !important;
+        background: rgba(68, 131, 78, 0.5) !important;
+    }
+
+    /*
+    wir brauchen dads background: none hier, da wir sonst einen schwarzen schatten im content haben.
+     */
+    .caption_framed .slideshow_caption .avia-caption-content p, .caption_framed .slideshow_caption .avia-caption-title,
+    .avia-caption .avia-caption-content p, .avia-caption .avia-caption-title {
+        filter: alpha(opacity=80);
+        display: inline-block;
+        margin: 0 0 1px 0;
+        padding: 10px 15px;
+        background: none;
+    }
+
+    .responsive #scroll-top-link {
+        display: block !important;
+        background: linear-gradient(135deg, transparent 5px, #f2f2f2 0) top left, linear-gradient(225deg, transparent 5px, #f2f2f2 0) top right, linear-gradient(315deg, transparent 5px, #f2f2f2 0) bottom right, linear-gradient(45deg, transparent 5px, #f2f2f2 0) bottom left;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        color: black;
+        line-height: 32px;
+        border: none;
+    }
 
     #sign-up h3 {
         text-decoration: none;
