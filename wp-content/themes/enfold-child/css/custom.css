@@ -401,6 +401,19 @@ Style NEWS ÜBERSICHT SEITE ENDE
     right: -20px;
 }
 
+#top .avia-content-slider .avia-slideshow-arrows a.prev-slide {
+    top: 50%;
+    background: #44834e;
+    position: absolute;
+    left: 60px;
+    transform: translateX(-100%);
+}
+
+#top #av_section_6 .avia-content-slider .avia-slideshow-arrows a.next-slide {
+    top: 50%;
+    right: 0;
+}
+
 
 .responsive .logo img {
     height: 55px;
@@ -511,6 +524,11 @@ Desktop Styles
 @media only screen and (min-width: 768px) {
     /* Add your Desktop Styles here */
 
+    .alles-in-einer-hand_desktop {
+        color: white;
+        font-family: 'EurostileLTStd-Bold', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    }
+
     #top.page-id-504 .fullsize .template-blog .post-title {
         font-size: 1.8vh;
         color: #44834e;
@@ -533,6 +551,12 @@ Desktop Styles
 
     #top.page-id-504 .avia-logo-element-container .slide-entry {
         padding: 8px;
+        margin-top: -8px;
+        margin-bottom: 40px;
+    }
+
+    #top.page-id-504 #alles-in-einer-hand_desktop .avia-logo-element-container .slide-entry {
+        padding: 50px;
         margin-top: -8px;
         margin-bottom: 40px;
     }
@@ -669,8 +693,10 @@ Schattierung von SliderText oben
 
     #top.page-id-504 article.post-entry {
         display: flex;
-        margin-left: 0;
-        width: 33%;
+    }
+
+    #top.page-id-504 article.post-entry a{
+        border-radius: 0;
     }
 
     #top.page-id-504 article.post-entry a img {
@@ -695,6 +721,14 @@ Schattierung von SliderText oben
         position: absolute;
         z-index: 99;
         top: 35px;
+    }
+
+    #top #alles-in-einer-hand_desktop.main_color .avia-color-theme-color {
+        background: linear-gradient(135deg, transparent 5px, #292929 0) top left, linear-gradient(225deg, transparent 5px, #292929 0) top right, linear-gradient(315deg, transparent 5px, #292929 0) bottom right, linear-gradient(45deg, transparent 5px, #292929 0) bottom left;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+        padding: 19px 50px 19px;
+        margin-top: 50px;
     }
 
 
@@ -850,14 +884,14 @@ Schattierung von SliderText oben
         border: none;
     }
 
-    #sign-up h3 {
+    #alles-in-einer-hand_mobile h3 {
         text-decoration: none;
         font-size: 14px;
         line-height: 1.33;
         letter-spacing: 0.6px;
     }
 
-    #sign-up h2 {
+    #alles-in-einer-hand_mobile h2 {
         text-decoration: none;
         font-size: 20px;
         line-height: 1.25;
@@ -865,14 +899,14 @@ Schattierung von SliderText oben
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
     }
 
-    #top #sign-up.main_color .avia-color-theme-color {
+    #top #alles-in-einer-hand_mobile.main_color .avia-color-theme-color {
         background: linear-gradient(135deg, transparent 5px, #292929 0) top left, linear-gradient(225deg, transparent 5px, #292929 0) top right, linear-gradient(315deg, transparent 5px, #292929 0) bottom right, linear-gradient(45deg, transparent 5px, #292929 0) bottom left;
         background-size: 51% 51%;
         background-repeat: no-repeat;
         padding: 19px 50px 19px;
     }
 
-    #top #sign-up.main_color .avia-color-theme-color .avia_iconbox_title {
+    #top #alles-in-einer-hand_mobile.main_color .avia-color-theme-color .avia_iconbox_title {
         color: white;
         font-weight: bold;
     }

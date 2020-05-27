@@ -63,6 +63,11 @@ function ava_new_custom_script_desktop(){
                     el.append("<span class='custom-caption'>" + el.attr("data-avia-tooltip") + "</span>");
                     el.attr("data-avia-tooltip", "");
                 });
+                jQuery("#alles-in-einer-hand_desktop .slide-entry.av_one_third").each(function() {
+                    var el = jQuery(this);
+                    el.append("<div style='text-align: center'><span class='alles-in-einer-hand_desktop'>" + el.attr("data-avia-tooltip") + "</span></div>");
+                    el.attr("data-avia-tooltip", "");
+                });
             });
         })(jQuery);
     </script>
