@@ -68,3 +68,4 @@ function ava_new_custom_script_desktop(){
     </script>
     <?php
 }
+add_theme_support('add_avia_builder_post_type_option');

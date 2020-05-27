@@ -295,10 +295,6 @@ Style Newsbeitrag Homepage
     font-family: DINPro-Demi , 'Helvetica-Neue', Helvetica, Arial, sans-serif;;
 }
 
-#top.page-id-504 .entry-content p {
-    display: none;
-}
-
 /*
 Style Newsbeitrag Blog Homepage Ende
  */
@@ -527,18 +523,7 @@ Desktop Styles
     }
 
     #top.page-id-504 .entry-content {
-        position: absolute;
-        top: 10px;
-        left: 20px;
-        z-index: 99;
-        background: linear-gradient(135deg, transparent 5px, #44834e 0) top left,
-        linear-gradient(225deg, transparent 5px, #44834e 0) top right,
-        linear-gradient(315deg, transparent 5px, #44834e 0) bottom right,
-        linear-gradient(45deg, transparent 5px, #44834e 0) bottom left;
-        background-size: 51% 51%;
-        border-bottom-style: hidden;
-        background-repeat: no-repeat;
-        padding: 0px 20px 0px;
+        margin: 90px 50px 0px 50px !important;
     }
 
     #top .fullsize .template-blog .big-preview a img {
@@ -684,6 +669,12 @@ Schattierung von SliderText oben
 
     #top.page-id-504 article.post-entry {
         display: flex;
+        margin-left: 0;
+        width: 33%;
+    }
+
+    #top.page-id-504 article.post-entry a img {
+        border-radius: 0;
     }
 
     #top.page-id-504 article.post-entry .blog-meta {
@@ -735,6 +726,10 @@ Mobile Styles
 
 @media only screen and (max-width: 767px) {
     /* Add your Mobile Styles here */
+
+    #top.page-id-504 .entry-content p {
+        display: none;
+    }
 
     #top.page-id-504 .entry-content-header {
         position: absolute;
@@ -871,14 +866,15 @@ Schattierung von SliderText oben
     }
 
     #top #sign-up.main_color .avia-color-theme-color {
-        background: linear-gradient(135deg, transparent 5px, #f2f2f2 0) top left, linear-gradient(225deg, transparent 5px, #f2f2f2 0) top right, linear-gradient(315deg, transparent 5px, #f2f2f2 0) bottom right, linear-gradient(45deg, transparent 5px, #f2f2f2 0) bottom left;
+        background: linear-gradient(135deg, transparent 5px, #292929 0) top left, linear-gradient(225deg, transparent 5px, #292929 0) top right, linear-gradient(315deg, transparent 5px, #292929 0) bottom right, linear-gradient(45deg, transparent 5px, #292929 0) bottom left;
         background-size: 51% 51%;
         background-repeat: no-repeat;
         padding: 19px 50px 19px;
     }
 
     #top #sign-up.main_color .avia-color-theme-color .avia_iconbox_title {
-        color: #44834e;
+        color: white;
+        font-weight: bold;
     }
 
     #top .logo,
