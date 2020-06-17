@@ -73,4 +73,47 @@ function ava_new_custom_script_desktop(){
     </script>
     <?php
 }
+
+add_action('wp_footer', 'ava_new_custom_script_desktop_four');
+function ava_new_custom_script_desktop_four(){
+    ?>
+    <script type="text/javascript">
+        (function($) {
+            $(window).load(function() {
+                jQuery(".slide-entry.av_one_fourth").each(function() {
+                    var el = jQuery(this);
+                    el.append("<span class='custom-caption-projekte'>" + el.attr("data-avia-tooltip") + "</span>");
+                    el.attr("data-avia-tooltip", "");
+                });
+                jQuery("#alles-in-einer-hand_desktop .slide-entry.av_one_fourth").each(function() {
+                    var el = jQuery(this);
+                    el.append("<div style='text-align: center'><span class='alles-in-einer-hand_desktop'>" + el.attr("data-avia-tooltip") + "</span></div>");
+                    el.attr("data-avia-tooltip", "");
+                });
+            });
+        })(jQuery);
+    </script>
+    <?php
+}
+
 add_theme_support('add_avia_builder_post_type_option');
+
+// slide link
+add_action('wp_footer', 'ava_new_custom_script');
+function ava_new_custom_script(){
+    ?>
+    <script type="text/javascript">
+        (function($) {
+            function b() {
+                $('.slide-entry').each(function() {
+                    var content = $(this).find('.slide-content').detach();
+                    $(this).find('.slide-image').append(content);
+                });
+            }
+
+            b();
+        })(jQuery);
+
+    </script>
+    <?php
+}

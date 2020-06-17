@@ -110,7 +110,7 @@ if (have_posts()) :
 	if( '' == $current_post['content'] )
 	{
 		$current_post['content'] 	= $blog_content == "content" ? get_the_content(__('NEWS','avia_framework').'<span class="more-link-arrow"></span>') : get_the_excerpt();
-		$current_post['content'] 	= $blog_content == "excerpt_read_more" ? $current_post['content'].'<div class="read-more-link"><a href="'.get_permalink().'" class="more-link">'.__('NEWS','avia_framework').'<span class="more-link-arrow"></span></a></div>' : $current_post['content'];
+		$current_post['content'] 	= $blog_content == "excerpt_read_more" ? $current_post['content'].'<div class="read-more-link"><a href="'.get_permalink().'" class="more-link">'.__('ERFAHRE MEHR','avia_framework').'<span class="more-link-arrow"></span></a></div>' : $current_post['content'];
 		$current_post['before_content'] = "";
 
 		/*
