@@ -543,6 +543,34 @@ Desktop Styles
 @media only screen and (min-width: 768px) {
     /* Add your Desktop Styles here */
 
+    #news-blog-entries {
+        padding: 0px 22%;
+    }
+
+    #news-blog-entries .big-preview.single-big {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #news-blog-entries .entry-content-wrapper.clearfix.standard-content {
+        height: 65px;
+        background-color: white !important;
+    }
+
+    #news-blog-entries .entry-content-wrapper.clearfix.standard-content header h2 {
+        color: #44834e;
+        margin-left: 25px;
+    }
+
+    #top.page-id-842 #news-blog-entries .entry-content-header {
+        bottom: 18px;
+    }
+
+    #top #news-blog-entries .entry-content {
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
     #past_projects .slide-content {
         opacity: 0;
     }
@@ -839,6 +867,7 @@ Schattierung von SliderText oben
     #top .fullsize .template-blog .post .entry-content-wrapper {
         flex: 1;
         background-color: #f2f2f2;
+        max-width: 100%;
     }
 
     #top.page-id-504 .entry-content-header {
@@ -918,15 +947,26 @@ Schattierung von SliderText oben
         top: 50%;
     }
 
+    #top #past_projects .entry-content-header {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        top: 0px;
+    }
+
     #top #past_projects .slide-entry-title {
         color: white;
-        margin-left: 38%;
+        /* top: 51px; */
+        height: 100%;
+        /* vertical-align: middle; */
         text-decoration: none;
-        visibility: visible;
+        /* visibility: visible; */
         text-align: center;
-        width: 300px;
         z-index: 999999;
-        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #top #past_projects .container {
@@ -948,6 +988,36 @@ Mobile Styles
 
 @media only screen and (max-width: 767px) {
     /* Add your Mobile Styles here */
+
+    #news-blog-entries .big-preview.single-big {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #news-blog-entries .entry-content-wrapper.clearfix.standard-content {
+        height: 50px;
+        background-color: white !important;
+    }
+
+    #news-blog-entries .entry-content-wrapper.clearfix.standard-content header h2 {
+        color: #44834e;
+        margin-left: 15px;
+        font-size: 12px !important;
+    }
+
+    #top.page-id-842 #news-blog-entries .entry-content-header {
+        bottom: 12px;
+    }
+
+    #top #news-blog-entries .entry-content {
+        margin-left: 15px;
+        margin-top: 7.5px;
+    }
+
+    #normale-groesse .avia-image-container .avia_image, .avia-image-container .avia-image-overlay-wrap {
+        width: 100% !important;
+    }
 
     .page-id-504 h3 {
         text-align: center;
@@ -1133,6 +1203,10 @@ Schattierung von SliderText oben
         color: #44834e !important;
     }
 
+    .html_av-overlay-side.av-burger-overlay-active #top #wrap_all #header .menu-item-search-dropdown a::before {
+        font-size: 34px;
+    }
+
     .html_av-overlay-side #top #wrap_all div .av-burger-overlay-scroll #av-burger-menu-ul a:hover {
         background-color: transparent !important;
         color: #44834e !important;
@@ -1316,8 +1390,8 @@ Schattierung von SliderText oben
 
     #top .parent-pageid-834 .avia-image-container .avia_image, .avia-image-container .avia-image-overlay-wrap {
 
-/*        kurz rausgenommen, weil auf der historie seite die Bilder sonst zu klein sind.
-width: 66px;*/
+        /* kurz rausgenommen, weil auf der historie seite die Bilder sonst zu klein sind.
+        width: 100% !important;*/
         height: auto;
     }
 
@@ -1345,4 +1419,14 @@ width: 66px;*/
     border: none;
 }
 
+.team-member-name {
+    text-align: center;
+}
 
+.team-member-job-title {
+    text-align: center;
+}
+
+.team-member-description {
+    text-align: center;
+}
